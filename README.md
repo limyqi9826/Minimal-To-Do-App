@@ -15,3 +15,7 @@ A clean, drag-and-drop task manager built with HTML, CSS, and JavaScript. Featur
 1. Clone this repository:
    ```bash
    git clone https://github.com/limyqi9826/Minimal-To-Do-App.git
+
+## 📎 Icon Attribution
+
+Favicon icon made by Freepik (https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
