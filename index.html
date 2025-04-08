@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimal To-Do App</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>My Tasks</h1>
+      <div class="progress">
+        <span id="progress-count">0</span> / <span id="progress-total">0</span> completed
+      </div>
+    </header>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Quick add task..." required />
+      <select id="priority-select">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <select id="category-select">
+        <option value="">Select Category</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Health & Fitness">Health & Fitness</option>
+        <option value="Finance">Finance</option>
+        <option value="Study / Education">Study / Education</option>
+        <option value="Home">Home</option>
+        <option value="Social">Social</option>
+        <option value="Travel">Travel</option>
+        <option value="Goals / Habits">Goals / Habits</option>
+        <option value="Ideas">Ideas</option>
+        <option value="__custom__">Custom...</option>
+      </select>
+      <input type="text" id="custom-category" placeholder="Enter custom category" style="display:none;" />      
+      <button type="submit">Add</button>
+      <button type="button" id="manage-categories-btn">Manage Categories</button>
+    <div id="category-manager" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h3>Custom Categories</h3>
+        <ul id="custom-category-list"></ul>
+        <button id="close-category-manager">Close</button>
+    </div>
+    </div>
+
+    </form>
+
+    <div id="export">
+        <button id="export-btn">Export Tasks</button>
+    </div>
+    <div id="task-list" class="task-list" ondragover="event.preventDefault()"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
