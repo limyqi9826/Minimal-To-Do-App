@@ -19,3 +19,7 @@ A clean, drag-and-drop task manager built with HTML, CSS, and JavaScript. Featur
 ## 📎 Icon Attribution
 
 Favicon icon made by Freepik (https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
+
+## 🔗 Live Demo
+
+[Click here to try it out](https://minimal-to-do-app-omega.vercel.app)
